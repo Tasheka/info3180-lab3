@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+    <div id = "heading"><h1>Contact Form</h1></div>
+    <div id = "instructions"><h4>Complete the form below to contact the website owners.</h4></div>
+    <form method = 'POST' >
+        {{ form.csrf_token }}
+        
+        <div id = "fieldName">{{ form.name.label }}</div><div id = "required"> (Required)</div> 
+        <div id = "fieldDescription">Please enter your full name.</div>
+        <div id = "enterField">{{form.name }}</div><br>
+        
+        <div id = "fieldName">{{ form.email_address.label }}</div><div id = "required"> (Required)</div> 
+        <div id = "fieldDescription">Please enter your e-mail address.</div>
+        <div id = "enterField">{{form.email_address }}</div><br>
+        
+        <div id = "fieldName">{{ form.subject.label }}</div><div id = "required"> (Required)</div> 
+        <div id = "fieldDescription">Please enter the subject for your message.</div>
+        <div id = "enterField">{{form.subject }}</div><br>
+        
+        <div id = "fieldName">{{ form.message.label }}</div><div id = "required"> (Required)</div> 
+        <div id = "fieldDescription">Please enter the message you would like to send.</div>
+        <div id = "enterField">{{form.message }}</div><br>
+        
+        <button type = "Submit">Send</button>
+    </form>
+
+{% endblock %}

@@ -1,3 +1,25 @@
 body {
     padding-top: 5rem;
+    border:solid black;
+    margin: 100px 50px 50px 50px;
+}
+
+button{
+    background-color: blue;
+    border: solid grey;
+    color:white;
+}
+
+#top-form, #bottom-form{
+    margin-left: 10px;
+}
+
+#heading{
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#required{
+    color: red;
 }
