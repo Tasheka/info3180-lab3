@@ -12,9 +12,10 @@ from app import mail
 from flask_mail import Message
 
 
-###
+####
 # Routing for your application.
-###
+####
+
 
 @app.route('/')
 def home():
